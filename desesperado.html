@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Flex-basis</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 800px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    .item {
+      background-color: #ccc;
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+    }
+
+    .item-1 {
+      flex-basis: 100px;
+      background-color: #f00;
+    }
+
+    .item-2 {
+      flex-grow: 1;
+      background-color: #0f0;
+    }
+
+    .item-3 {
+      flex-basis: 200px;
+      background-color: #00f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item-1">Item 1 (fixo)</div>
+    <div class="item item-2">Item 2 (cresce)</div>
+    <div class="item item-3">Item 3 (fixo)</div>
+  </div>
+</body>
+</html>
